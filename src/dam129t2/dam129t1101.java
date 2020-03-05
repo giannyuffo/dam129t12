@@ -1,5 +1,8 @@
 package dam129t2;
 
+import java.util.Scanner;
+import java.util.Set;
+
 /**
  *
  * @author uffog
@@ -27,7 +30,17 @@ package dam129t2;
  */
 public class dam129t1101 {
     public static void main(String[] args) {
-   
-    
+        Scanner teclado = new Scanner(System.in);
+        
+        Triangle f1 = new Triangle();
+        
+        System.out.println("What's the triangle's width and high?");
+        f1.setWidth(teclado.nextDouble());
+        f1.setHigh(teclado.nextDouble());
+        
+        f1.setStyle();
+
+        System.out.printf("\n The triangle's area is %.2f cuadratic units.",f1.area());
+        System.out.printf("\n This is an %s triangle",f1.getStyle());
 }   
 }

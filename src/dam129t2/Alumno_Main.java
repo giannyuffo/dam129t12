@@ -1,4 +1,4 @@
-package dam129t11;
+package dam129t2;
 
 /*
 Ctrl + Space                 completar
@@ -11,12 +11,16 @@ iff + Tab                       if
 sw + Tab                      switch
 */
 import java.util.Scanner;
-public class ejemploApuntes1 {
+public class Alumno_Main {
 
     public static void main(String[] args)  {
         
        Scanner teclado = new Scanner(System.in);
-       AlumnoESO alum1 = new AlumnoESO ("Juan Pérez", "3536565N", 981900900);
+       
+       
+       Alumno alum3 = new AlumnoCiclos ("Pepito Perez","49918174F","EOI","uff@gmail.com");
+       
+      /* AlumnoESO alum1 = new AlumnoESO ("Juan Pérez", "3536565N", 981900900);
        AlumnoCiclos alum2 = new AlumnoCiclos("Ana Lopez", "777777K", "Abanca", "ana@gmail.com");
        
        alum1.nuevaFalta(3);
@@ -25,5 +29,8 @@ public class ejemploApuntes1 {
        alum2.nuevaFalta(7);
        alum2.nuevaFalta(20);
        alum2.nuevaFalta(33);
-    }
+       */
+       
+      
+    } 
 } //fin clase
