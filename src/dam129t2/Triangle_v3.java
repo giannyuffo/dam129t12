@@ -10,22 +10,17 @@ import java.util.Scanner;
  *
  * @author uffog
  */
-public class Triangle extends Figura2D_v1{
+public class Triangle_v3 extends Figura2D_v3{
    Scanner teclado = new Scanner(System.in);
    String style; double area;
    
-   Triangle(){}
-   Triangle(double Wi, double Hi, String s){
-       super (Wi, Hi);
-       style=s;
-       area=0;
-   }
+   Triangle_v3(){}
+      
    public void setStyle(){
        System.out.println("What's the type of this triangle?");
        this.style=teclado.nextLine();
     }
     public String getStyle() {
-    
        // char[] caracteres = style.toCharArray();
         //caracteres[0] = Character.toUpperCase(caracteres[0]);
         

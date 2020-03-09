@@ -31,8 +31,9 @@ import java.util.Set;
 public class dam129t1101 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        
-        Triangle f1 = new Triangle();
+        double w = 0,h = 0;
+        String s = null;
+        Triangle f1 = new Triangle(w,h,s);
         
         System.out.println("What's the triangle's width and high?");
         f1.setWidth(teclado.nextDouble());

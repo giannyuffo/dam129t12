@@ -10,31 +10,39 @@ import java.util.Scanner;
  *
  * @author uffog
  */
-public class Triangle extends Figura2D_v1{
+public class Triangle_v8 extends Figura2D_v8{
    Scanner teclado = new Scanner(System.in);
-   String style; double area;
+   String style; double area, meas;
    
-   Triangle(){}
-   Triangle(double Wi, double Hi, String s){
-       super (Wi, Hi);
-       style=s;
-       area=0;
+   Triangle_v8(){
+       super();
+       style=null;
    }
-   public void setStyle(){
-       System.out.println("What's the type of this triangle?");
-       this.style=teclado.nextLine();
+   Triangle_v8(double m){
+       super(m);
+       style="Same Width and High";
+   }
+   Triangle_v8(double Wi, double Hi, String s, String n){
+       super (Wi, Hi,n);
+       style=s;
+   }
+   
+   
+   
+    public void setStyle(String s){
+       this.style=s;
     }
     public String getStyle() {
-    
-       // char[] caracteres = style.toCharArray();
-        //caracteres[0] = Character.toUpperCase(caracteres[0]);
+      
+        char[] caracteres = style.toCharArray();
+        caracteres[0] = Character.toUpperCase(caracteres[0]);
         
         String firtsLetter = style.substring(0, 1).toUpperCase();
         String restoDeLaCadena = style.substring(1);
         String capital = firtsLetter + restoDeLaCadena;
-        
-    return capital;
-    }
+       
+       return capital;
+       }
     public double area() {
         return this.area = (super.getWidth() * super.getHigh())/2;
     }
