@@ -20,7 +20,7 @@ public class Figura2D_v8 {
         width=m; high=m;
     }
     Figura2D_v8(double w, double h, String n){
-        this.width =w; this.high=h;this.name=n;
+        width =w; high=h;name=n;
     }
     
     
